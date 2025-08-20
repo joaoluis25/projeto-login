@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body{
+        background-image: linear-gradient(to bottom, #887a4fa6, #b9a772, #a179bb);
+    }
+    #login{
+        width: 85vw;
+    }
+
+    #login > #imagem{
+        float: left;/* serve para posicionar um elemento à esquerda ou à direita, permitindo que outros elementos, como texto, se ajustem ao seu redor, como em um layout de jornal. 
+        Valores mais comuns:
+        [float: left;]:
+            O elemento é posicionado no lado esquerdo do seu contêiner, e o conteúdo subsequente é exibido         ao seu lado direito, envolvendo-o. 
+        [float: right;]:
+            O elemento é posicionado no lado direito do seu contêiner, e o conteúdo subsequente é exibido ao         seu lado esquerdo, envolvendo-o. 
+        [float: none;]:
+            O elemento não flutua, retornando ao fluxo normal do documento (é o valor padrão). 
+        [float: inherit;]:
+            O elemento herda o valor float do seu elemento pai. 
+        */
+        width: 30%;
+        height: 100%;
+    }
+
+    #login > #formulario{
+        float: right;
+        width: 70%;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    body{
+        background-image: linear-gradient(to bottom, #887a4fa6, #b9a772, #a179bb);
+    }
+    #login{
+        width: 950px;
+    }
+
+    #login > #imagem{
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    #login > #formulario{
+        float: right;
+        width: 50%;
+    }
+   
+
+}
