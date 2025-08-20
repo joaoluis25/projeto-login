@@ -10,3 +10,58 @@
 
 */
 
+*{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-color:#C2B078 ;
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#login{
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden; /*Controla o que acontece quando o conteúdo "transborda" da caixa do elemento. 
+    Valores mais comuns
+    [visible]:
+       O conteúdo que excede as dimensões do elemento é exibido, mesmo que ultrapasse as bordas. Este é o valor padrão. 
+    [hidden]:
+       O conteúdo excedente é ocultado, como se fosse cortado. Não há barras de rolagem. 
+    [scroll]:
+       Adiciona barras de rolagem (vertical e/ou horizontal) para que o usuário possa visualizar todo o conteúdo, mesmo que ele não esteja todo visível inicialmente. 
+    [auto]:
+       Semelhante a scroll, mas as barras de rolagem são adicionadas apenas quando necessário, ou seja, quando o conteúdo excede as dimensões do elemento. 
+    */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
+    display: block;
+}
+
+#imagem{
+    background:#C2B078 url(../imagem\ de\ tela.jpg) center center;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+#formulario{
+    padding: 10px;
+    display: block;
+}
