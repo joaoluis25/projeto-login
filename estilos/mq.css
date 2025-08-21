@@ -1,11 +1,14 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 768px) and (max-width: 992px){
+@media screen and (min-width: 768px) and (max-width: 992px){  /*CONFIGURAÇÃO PARA TABLET*/
+
     body{
         background-image: linear-gradient(to bottom, #887a4fa6, #b9a772, #a179bb);
     }
+
     #login{
         width: 85vw;
+        height: 400px;
     }
 
     #login > #imagem{
@@ -35,12 +38,13 @@
 
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) { /*CONFIGURAÇÃO PARA TELAS MAIORES*/
     body{
         background-image: linear-gradient(to bottom, #887a4fa6, #b9a772, #a179bb);
     }
     #login{
         width: 950px;
+        height: 450px;
     }
 
     #login > #imagem{

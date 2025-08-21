@@ -37,7 +37,8 @@ main{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    
+
     overflow: hidden; /*Controla o que acontece quando o conteúdo "transborda" da caixa do elemento. 
     Valores mais comuns
     [visible]:
@@ -49,11 +50,13 @@ main{
     [auto]:
        Semelhante a scroll, mas as barras de rolagem são adicionadas apenas quando necessário, ou seja, quando o conteúdo excede as dimensões do elemento. 
     */
+
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
     display: block;
 
     transition: width 0.32s, height 0.32s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 
 #imagem{
@@ -79,11 +82,12 @@ main{
 }
 
 form > .campo{
-    background-color: beige;
+    background-color: rgb(250, 250, 217);
     width: 100%;
     height: 40px;
     border-radius: 5px;
     margin: 5px 0px;
+    border: 1px solid black;
 
 }
 
@@ -91,8 +95,36 @@ form label{
     display: none;
 }
 
-form i{
+.campo i{
     color: black;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+.campo input{
+    background-color: white;
+    font-size: 1em;
+
+    width: calc(100% - 24%); /*Width + calc(): É uma calculadora no CSS. Você usa para fazer contas direto no tamanho dos elementos, como "pegar 100% do espaço e subtrair 50 pixels". Ideal para layouts que precisam se adaptar a diferentes telas.*/
+
+    height: 100%;
+    border: 0px;
+    padding: 5px;
+    border: 2px solid black;
+    transform: translateY(-12.2px); /*Transform: É um efeito que modifica um elemento visualmente sem atrapalhar os outros ao redor. Com ele você pode: mover (translate), girar (rotate), aumentar/diminuir (scale) ou inclinar (skew) qualquer coisa na página de forma suave e sem quebrar o layout.
+    Seus valores:
+    Primeiro valor: eixo X (horizontal → positivo = direita, negativo = esquerda)
+    Segundo valor: eixo Y (vertical → positivo = baixo, negativo = cima)
+    Terceiro valor: eixo Z (profundidade → positivo = para frente, negativo = para trás)
+    Valores Aceitos
+    [Pixels]: translate(20px, 30px)
+    [Porcentagem]: translate(50%, -25%) → % do próprio elemento
+    [Unidades relativas]: rem, em, vh, vw
+    [Valores negativos]: Movem na direção oposta
+    [Decimal]: translate(2.5px, 3.1px)
+    */
+    /*OBS: SEMPRE QUE VC TIVER UMA TRANSFORMAÇÃO OU ANIMAÇÃO PARA FAZER ELA SEMPRE DEVE FICAR AO FINAL DO SELETOR DA MESMA!! */
 }
 
 form > input[type=submit]{
